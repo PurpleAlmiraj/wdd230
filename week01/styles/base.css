@@ -1,38 +1,35 @@
 * {
-    color: white;
+    color: black;
     
 
 }
-body {
+body{
     font-family: 'Roboto', sans-serif; 
-    background-color: #333333;
-}
-
-section {
-    background-color: #333333;
+    background-color: white;
 }
 
 header img {
-  width: 200px; 
   height: 200px; 
-  padding-left: 25%;
-  
+  border: 2px solid #fff; 
+  margin-left: 40%;
+
 }
 header {
-    background-color: teal;
+    background-color: #1d4d72;
     display: flex;
     align-items: center; 
-    justify-content: center;
     height: 250px;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
+
 h1 {
   flex-grow: 1; 
   text-align: center; 
   font-size: 50px;
-  padding-right: 35%;
+  margin-right: 40%;
 }
+
+
 nav {
     display: flex;
     flex-direction: column; 
@@ -48,8 +45,8 @@ nav a {
     text-align: center;
 }
 
-a:hover {
-    background-color: grey;
+nav a:hover {
+    background-color: #643219;
 }
 
 main {
@@ -65,6 +62,7 @@ h2 {
     font-size: 50px;
     justify-content: center;
     grid-row: 1;
+    text-decoration: underline;
 }
 
 .card1 {
@@ -72,7 +70,7 @@ h2 {
 }
 
 h3, h4 {
-    background-color: teal;
+    background-color: #1d4d72;
     text-align: center;
     align-items: center;
     font-size: 300%;
@@ -103,8 +101,11 @@ li {
 
 ul li a {
     margin-left: 20px;
+    margin-right: 20px;
     color: #007BFF;
 }
+
+
 
 .card2 p{
     font-size: 30px;
@@ -112,7 +113,7 @@ ul li a {
     align-items: center;
 }
 footer {
-    background-color: black;
+    background-color: #1d4d72;
     text-align: center;
     padding: 10px 0;
     font-size: 30px;
