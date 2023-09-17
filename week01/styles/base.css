@@ -65,6 +65,7 @@ h2 {
     justify-content: center;
     grid-row: 1;
     text-decoration: underline;
+    color: black;
 }
 
 .card1 {
