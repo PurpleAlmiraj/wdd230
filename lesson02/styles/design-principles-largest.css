@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px)
+{    
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 0px solid white;
+        width: 100%;
+        height: 1100px;
+    }
+    .youtube {
+        grid-column: 1;
+    }
+    .google {
+        grid-column: 2;
+
+    }
+    .netflix {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .youtube, .google, .netflix {
+        width: 50rem;
+        height: 1000px;
+    }
+    div {
+        padding: 2rem;
+    }
+}
