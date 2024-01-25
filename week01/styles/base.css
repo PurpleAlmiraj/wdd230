@@ -7,7 +7,6 @@
 body{
     font-family: 'Roboto', sans-serif; 
     background-color: white;
-
 }
 
 header img {
@@ -34,7 +33,7 @@ h1 {
 
 
 
-nav {
+nav ul{
     display: flex;
     flex-direction: column; 
     background-color: black;
@@ -42,17 +41,18 @@ nav {
     margin: 0 auto;
   }
 
-nav a {
+nav ul a {
     text-decoration: none;
-    font-size: 300%;
     padding: 20px;
     text-align: center;
+    justify-content: center;
+
 }
 
 
-nav a:hover {
+nav ul a:hover {
     background-color: #643219;
-
+    margin-left: -3rem;
 }
 
 main {
@@ -61,6 +61,7 @@ main {
     grid-gap: 20px; 
     padding-left: 30px;
     padding-right: 30px;
+
 }
 
 h2 {
@@ -71,6 +72,10 @@ h2 {
     text-decoration: underline;
     color: black;
 
+}
+
+.active::after { 
+    content: "!"
 }
 
 .card1 {
@@ -148,3 +153,8 @@ footer p {
     margin: 10px 0; 
 }
 
+iframe {
+    width: 600px;
+    height: 400px;
+    padding-bottom: 2rem;
+}
