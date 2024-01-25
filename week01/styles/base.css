@@ -33,7 +33,7 @@ h1 {
 
 
 
-nav ul{
+nav {
     display: flex;
     flex-direction: column; 
     background-color: black;
@@ -41,7 +41,7 @@ nav ul{
     margin: 0 auto;
   }
 
-nav ul a {
+nav a {
     text-decoration: none;
     padding: 20px;
     text-align: center;
@@ -50,7 +50,7 @@ nav ul a {
 }
 
 
-nav ul a:hover {
+nav a:hover {
     background-color: #643219;
     margin-left: -3rem;
 }
