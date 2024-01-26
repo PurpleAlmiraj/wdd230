@@ -46,6 +46,12 @@ nav ul li a:hover {
     background-color: #FFA500;
 }
 
+section {
+    margin: 1rem;
+}
+
+
+
 img {
     display: block;
     margin: 2rem;
