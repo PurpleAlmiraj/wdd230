@@ -11,6 +11,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: Acme, Arial, sans-serif;
+	background-color: lightblue;
+	color: black;
 }
 
 h1 {
@@ -26,7 +28,6 @@ main {
 	flex-direction: column;
 }
 
-input,
 button {
 	padding: 0.5rem;
 }
