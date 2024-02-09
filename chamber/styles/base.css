@@ -1,9 +1,44 @@
-body{
+body {
     font-family: 'Roboto', sans-serif; 
     background-color: white;
     font-size: clamp(0.8rem,  1.5vw, 1.3rem);
     margin: 0;
+    transition: background-color 1s ease, color 1s ease; 
 }
+
+#dark {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: clamp(1rem,  1.5vw, 1.5rem);
+    background-color: rgb(51, 51, 51);
+    padding: .5rem;
+    border: white solid 2px;
+    text-decoration: none;
+    transition: background-color 0.9s ease, border 1s ease;
+}
+
+#dark::before {
+    content: "🌙";
+}
+
+#dark.darkness::before {
+    content: "☀️";
+
+}
+
+#dark:hover {
+    background-color: rgb(255, 255, 255);
+    border: black solid 2px;
+}
+
+body.darkness {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    transition: background-color 0.9s ease, border 1s ease;
+}
+
+
 
 header, footer {
     background-color: #FF5733;
@@ -16,6 +51,7 @@ header {
     text-align: center;
     font-size: clamp(2.5rem,  2vw, 3.5rem);
 }
+
 
 header h1 {
     font-size: clamp(1.2rem,  1.5vw, 2rem);
@@ -38,12 +74,13 @@ nav a {
     width: 100%;
     height: 100%;
     padding: clamp(1rem, 2vw, 10.5rem);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.8s ease;
 
 }
 
 nav a:hover {
     background-color: darkblue;
+    transition: background-color 0.8s ease;
 }
 
 main {
@@ -60,7 +97,16 @@ section {
     margin-right: 5px;
 }
 
-.content3 div {
+
+
+
+.membership {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.content3 .membership div {
     background-color: rgb(184, 184, 184);
     width: 50px;
     margin: 1rem;
@@ -76,9 +122,6 @@ footer {
 
 @media screen and (max-width: 750px)
 {
-    header {
-        color: red;
-    }
 
     main {
 
