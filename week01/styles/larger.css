@@ -1,49 +1,91 @@
 @media screen and (min-width: 680px)
 {    
-    nav {
-        display: flex;
-        flex-direction: row; /* Arrange items horizontally */
-        justify-content: space-between; /* Evenly space the links */
-        height: auto; /* Reset height to auto */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
         
-    }
-
-    nav a{
-        padding: 25px;
-        font-size: 40px;
-        width: 25%;
-
-    }
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-    }
-    h2 {
-        grid-column: 1/3;
-        grid-row: 1;
-    }
-
-    .card {
-        grid-column: 1;
-        grid-row: 2;
+        /* Header styles */
+        header {
+            background-color: #1d4d72;
+            display: flex;
+            align-items: center;
+            height: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         
-    }
-    .card2 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .card2 p {
-        padding-top: 50px;
-    }
-    iframe {
-        width: 1200px;
-        height: 800px;
-        grid-column: 1/3;
-        margin-left: 25%;
-    
-    }
+        header img {
+            height: 200px;
+            border: 2px solid #fff;
+            margin-left: 40%;
+            margin-right: 15px;
+        }
+        
+        h1 {
+            flex-grow: 1;
+            font-size: 50px;
+            display: inline-block;
+        }
+        
+        /* Navigation styles */
+        nav {
+            display: none; /* Initially hidden */
+            flex-direction: row; /* Arrange items horizontally */
+            justify-content: space-between; /* Evenly space the links */
+            height: auto; /* Reset height to auto */
+        }
+        
+        nav a {
+            padding: 25px;
+            font-size: 40px;
+            width: 25%;
+        }
+        
+        /* Main styles */
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+        }
+        
+        h2 {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            color: black;
+        }
+        
+        .card1 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
+        .card2 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        
+        .card2 p {
+            padding-top: 50px;
+        }
+        
+        .hero {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        iframe {
+            width: 1200px;
+            height: 800px;
+            grid-column: 1 / span 2;
+            margin-left: auto;
+            margin-right: auto;
+        }
 }
 @media screen and (max-width: 680px)
 { 
