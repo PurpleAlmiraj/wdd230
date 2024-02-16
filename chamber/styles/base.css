@@ -87,7 +87,6 @@ main {
     text-align: center;
 }
 img {
-    aspect-ratio: 5 / 3;
     width: 75%; 
     height: auto; 
 }
