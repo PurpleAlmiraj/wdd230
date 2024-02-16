@@ -5,7 +5,7 @@
             background-color: white;
         }
         
-        /* Header styles */
+        
         header {
             background-color: #1d4d72;
             display: flex;
@@ -27,11 +27,11 @@
             display: inline-block;
         }
         
-        /* Navigation styles */
+        
         nav {
-            flex-direction: row; /* Arrange items horizontally */
-            justify-content: space-between; /* Evenly space the links */
-            height: auto; /* Reset height to auto */
+            flex-direction: row; 
+            justify-content: space-between; 
+            height: auto; 
         }
         
         nav a {
@@ -40,7 +40,7 @@
             width: 25%;
         }
         
-        /* Main styles */
+        
         main {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
