@@ -126,4 +126,19 @@
 
     }
 
+    header {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        margin: 3rem;
+        margin-right: -3rem;
+    }
+    h1 {
+        margin-left: -1rem;
+    }
+    
+
 }
