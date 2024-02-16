@@ -29,7 +29,6 @@
         
         /* Navigation styles */
         nav {
-            display: none; /* Initially hidden */
             flex-direction: row; /* Arrange items horizontally */
             justify-content: space-between; /* Evenly space the links */
             height: auto; /* Reset height to auto */
