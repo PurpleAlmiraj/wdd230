@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/android-chrome-512x512.png">
+    <link rel="icon" href="images/android-chrome-512x512.webp">
     <meta property="og:title" content="Ryan's Chamber of Commerce" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://purplealmiraj.github.io/wdd230/chamber/index.html" >
@@ -37,13 +37,24 @@
         <a href="">Nav5</a>
     </nav>
     <main>
-        <img src="images/rexburg.webp" alt="Hero Image">
+        <div class = "hero">
+            <div class = "herodiv">
+                <picture>
+                    <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/wdd230-medium.webp" media="(max-width: 100px)">
+                    <img src="images/wdd230-large.webp" alt="Hero Image">
+                </picture>
+            </div>
+            
+        </div>
         <section class = "grid">
             <section class = "content1">
                 Call to action
             </section>
             <section class = "content2">
                 WeatherCard
+                <p>Temperature<span id="temperature"></span></p>
+                <p>Wind Speed: <span id="windSpeed"></span> m/s</p>
             </section>
             <section class = "content3">
                 <h2>Member spotlights</h2>
@@ -78,5 +89,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/Hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
