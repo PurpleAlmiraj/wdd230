@@ -103,6 +103,11 @@ h3 {
     text-align: center;
     align-items: center;
     color: black;
+
+}
+
+.numvisits {
+    color: black;
 }
 ul {
     list-style-type: none;

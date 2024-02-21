@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1> Lazyload </h1>
+    </header>
+    <main>
+        <img src="https://loremflickr.com/400/600" alt="Image1" loading="lazy">
+        <img src="https://loremflickr.com/400/600/dog" alt="image2" loading="lazy">
+        <img src="https://loremflickr.com/g/400/600/paris" alt="imag3" loading="lazy">
+        <img src="https://loremflickr.com/400/600/brazil,rio" alt="imag4" loading="lazy">
+        <img src="https://loremflickr.com/400/600/paris,girl/all" alt="immag5" loading="lazy">
+        <img src="https://loremflickr.com/g/400/600/paris,girl/all" alt="imag6" loading="lazy">
+    </main>
+    <footer>
+        <p>
+            © <span id="currentYear"></span>
+            Ryan Jones
+            Idaho
+        </p>
+        <p id = "lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
