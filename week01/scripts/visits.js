@@ -1,18 +1,15 @@
-const visits = document.querySelector(".numvisits");
+document.addEventListener("DOMContentLoaded", function() {
+    const visits = document.querySelector(".numvisits");
 
+    let numVisits = Number(localStorage.getItem("visits-ls"));
 
-let numVisits = Number(localStorage.getItem("visits-ls"));
+    if (isNaN(numVisits)) {
+        numVisits = 0;
+    }
 
+    visits.textContent = numVisits;
 
-if (isNaN(numVisits)) {
-    numVisits = 0;
-}
+    numVisits++;
 
-
-visits.textContent = numVisits;
-
-
-numVisits++;
-
-
-localStorage.setItem("visits-ls", numVisits);
+    localStorage.setItem("visits-ls", numVisits);
+});
