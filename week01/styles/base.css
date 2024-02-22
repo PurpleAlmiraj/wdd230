@@ -132,8 +132,6 @@ ul li a {
     justify-content: center;
     align-items: center;
     display: flex;
-    grid-template-columns: repeat(20, fr); 
-    grid-template-rows: 1fr;
     text-align: center; 
 }
 
