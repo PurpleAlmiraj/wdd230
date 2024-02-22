@@ -174,4 +174,5 @@ iframe {
     height: 400px;
     text-align: center;
     margin: 1rem;
+    border: black solid 2px;
 }
