@@ -90,6 +90,30 @@ img {
     width: 75%; 
     height: auto; 
 }
+.discover {
+
+}
+.sidebar {
+    border: black solid 2px;
+}
+
+.sidebar div {
+    border: blue solid 2px;
+    margin: 10px;
+    padding: 5rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.images img {
+    width: 300px;
+    height: auto;
+    margin: 1rem;
+}
 section {
     margin: 10px;
     margin-left: 5px;
