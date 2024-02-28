@@ -22,7 +22,7 @@ label {
 }
 
 input:required {
-    border-left: solid 8px rgb(214, 0, 0);
+    border-left: solid 8px rgb(235, 9, 9);
 }
 
 input:required:valid {
@@ -53,8 +53,10 @@ input[type="range"] {
 
 input[type="submit"] {
     color: white;
-    background: rgb(189, 0, 0);
+    background: rgb(235, 9, 9);
     padding: 1rem;
     border-radius: 20px;
     border: 2px solid black;
+    width: 100%;
+    width: 400px;
 }
