@@ -1,0 +1,60 @@
+:root {
+    --error-color: red;
+    --legend-font-size: 2rem;
+    --label-font-size: 1.2rem;
+}
+
+.error-message {
+    color: var(--error-color);
+}
+
+legend {
+    font-size: var(--legend-font-size);
+}
+
+label {
+    display: block;
+    padding: 1rem;
+    font-size: var(--label-font-size);
+    color: rgb(80, 80, 185);
+    width: 100%;
+    max-width: 400px;
+}
+
+input:required {
+    border-left: solid 8px rgb(214, 0, 0);
+}
+
+input:required:valid {
+    border-left: solid 8px rgb(0, 107, 0);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    background-color: rgb(214, 214, 214);
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+
+input[type="range"] {
+    width: calc(100% - 10px); 
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#ratingValue {
+    font-size: 1.5rem;
+    margin-left: 10px; 
+}
+
+input[type="submit"] {
+    color: white;
+    background: rgb(189, 0, 0);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid black;
+}

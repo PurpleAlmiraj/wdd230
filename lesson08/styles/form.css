@@ -1,0 +1,67 @@
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    color: blue;
+    padding: 0 .5rem;
+
+}
+
+.wf1 label {
+    display: block;
+    padding: 1rem;
+    color: red;
+    font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: blue;
+}
+
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 input[type="number"],
+.wf1 input[type="tel"] {
+    background-color: rgb(223, 223, 223);
+    display: block;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: .75rem;
+    color: grey;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+.wf1 input[type="submit"] {
+    background-color: rgba(116, 0, 116, 0.877);
+    color: white;
+    padding: .9rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 1%;
+}
+
+.wf1 input:required {
+    border-left: solid 8px rgb(214, 0, 0);
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px rgb(0, 107, 0);
+}
+
+
+
+
+
