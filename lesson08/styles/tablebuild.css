@@ -1,0 +1,33 @@
+
+table {
+    background-color: black;
+    color: white;
+}
+caption {
+    color: black;
+}
+thead {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+th {
+    padding: 10px;
+}
+tbody {
+    background: rgb(65, 4, 65);
+}
+td {
+   padding: 10px;
+   color: black;
+   
+}
+tbody tr:nth-child(odd) td:nth-child(odd),
+tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: #c5c5c5; 
+
+}
+
+tbody tr:nth-child(odd) td:nth-child(even),
+tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: #ffffff; 
+}
