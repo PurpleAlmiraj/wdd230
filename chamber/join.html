@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Jones - WDD 230 - Chamber of Commerce</title>
+    <meta name="description" content= "WDD 230 - Web Frontend Development - Ryan Jones - Chamber of Commerce">
+    <meta name="author" content="Ryan Jones">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/android-chrome-512x512.webp">
+    <meta property="og:title" content="Ryan's Chamber of Commerce" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://purplealmiraj.github.io/wdd230/chamber/index.html" >
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.worldatlas.com%2Fcities%2Frexburg-idaho.html&psig=AOvVaw0e3iEFc4yDNWZoEtVchU12&ust=1706993272603000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLj1sdLDjYQDFQAAAAAdAAAAABAE" />
+    
+</head>
+<body>
+    <a id = "dark" href="#"></a>
+    <header>
+        Rexburg
+        <h1>
+            Chamber of Commerce
+        </h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class ="navigation">
+        <a href="discover.html">Discover</a>
+        <a href="">Nav2</a>
+        <a href="">Nav3</a>
+        <a href="">Nav4</a>
+        <a href="">Nav5</a>
+    </nav>
+    <main>
+        <form method="get" action="thanks.html" id="myForm">
+            <fieldset class="col1">
+                <Legend>Information</Legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title* <input type="text" name="title" id="title" pattern="^[a-zA-Z\- ]{7,}$" required></label>
+                <label>Email <input type="email" name="email" id="email"  placeholder="example@example.com" required></label>
+                <label>Phone* <input type="tel" name="phone" id="phone" required></label>
+                <label>Organization Name* <input type="text" name="organizationName" id="organizationName" required></label>
+                <div>Membership Level</div>
+                <label><input type="radio" name="level" value="np"> NP Membership</label>
+                <label><input type="radio" name="level" value="bronze"> Bronze</label>
+                <label><input type="radio" name="level"  value="silver"> Silver</label>
+                <label><input type="radio" name="level"  value="gold"> Gold</label>
+                <label>Organization Description <input type="text" name="organizationDescription" id="organizationDescription"></label>
+                <input type="hidden" id="form-loaded-time" name="form-loaded-time">
+                <label><input type="submit" value="Join"></label>
+            </fieldset>
+            <div class="col2">
+                <p>
+                    Membership Benefits
+                </p>
+                <div>
+                    <div class = "level">
+                        Np Member
+                    </div>
+                    <p>
+                       <div class ="description">
+                        NP Membership is designed for non-profit organizations committed to community development and social causes. There is no fee associated with this membership level.
+                       </div>
+                        Benefits:
+                        <ul>
+                            <li> Access to networking events with other non-profit organizations.</li>
+                            <li> Opportunity to participate in community service projects organized by the Chamber of Commerce.</li>
+                            <li>Listing in the Chamber's directory of non-profit partners.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <div class = "level">
+                        Bronze Member
+                    </div>
+                    <p>
+                        <div class ="description">
+                            Bronze Membership is a basic level of membership suitable for small businesses and startups looking to establish their presence in the community.
+                            Cost: $100 per year.
+                        </div>
+                            Benefits:
+                            <ul>
+                                <li> Access to quarterly networking mixers.</li>
+                                <li> Mention in the Chamber's newsletter highlighting new members.</li>
+                                <li> Discounted rates for advertising in the Chamber's promotional materials.</li>
+                            </ul>
+                    </p>
+                </div>
+                <div>
+                    <div class = "level">
+                        Silver Member
+                    </div>
+                    <p>
+                        <div class ="description">
+                            Silver Membership is ideal for established businesses seeking to expand their reach and influence in the local market.
+                            Cost: $250 per year.
+                        </div>
+                            Benefits:
+                            <ul>
+                                <li> Priority placement on the Chamber's website directory, with a spotlight feature on the homepage.</li>
+                                <li> Invitation to exclusive training workshops and seminars hosted by industry experts.</li>
+                                <li> Discounts on Chamber-sponsored events and programs.</li>
+                            </ul>
+                    </p>
+                </div>
+                <div>
+                    <div class = "level">
+                        Gold Member
+                    </div>
+                    <p>
+                        <div class ="description">
+                            Gold Membership is the premier level of membership, offering maximum visibility and access to resources for large corporations and industry leaders.
+                            Cost: $500 per year.
+                        </div>
+                            Benefits:
+                            <ul>
+                                <li> Featured profile in the Chamber's monthly newsletter, reaching thousands of subscribers.</li>
+                                <li> VIP access to Chamber-hosted events, including meet-and-greets with prominent community leaders.</li>
+                                <li> Complimentary advertising space on the Chamber's website for promotional campaigns.</li>
+                            </ul>
+                    </p>
+                </div>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            © <span id="currentYear"></span>
+            Ryan Jones
+            Idaho
+        </p>
+        <p>
+            Email: <a href="rexburgchamber@gmail.com">rexburgchamber@gmail.com</a>
+        </p>
+        <p>
+            Phone Number: 1 (237) 672 7702
+        </p>
+        <p id = "lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/Hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
