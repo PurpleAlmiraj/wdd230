@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Jones - WDD 230 - Chamber of Commerce</title>
-    <meta name="description" content= "WDD 230 - Web Frontend Development - Ryan Jones - Chamber of Commerce">
+    <meta name="description" content= "WDD 230 - Web Frontend Development - Ryan Jones - Join Form">
     <meta name="author" content="Ryan Jones">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href = "https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/android-chrome-512x512.webp">
-    <meta property="og:title" content="Ryan's Chamber of Commerce" />
+    <meta property="og:title" content="Ryan's Chamber of Commerce- Join Form" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://purplealmiraj.github.io/wdd230/chamber/index.html" >
     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.worldatlas.com%2Fcities%2Frexburg-idaho.html&psig=AOvVaw0e3iEFc4yDNWZoEtVchU12&ust=1706993272603000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLj1sdLDjYQDFQAAAAAdAAAAABAE" />
@@ -51,7 +51,8 @@
                 <label><input type="radio" name="level" value="bronze"> Bronze</label>
                 <label><input type="radio" name="level"  value="silver"> Silver</label>
                 <label><input type="radio" name="level"  value="gold"> Gold</label>
-                <label>Organization Description <input type="text" name="organizationDescription" id="organizationDescription"></label>
+                <label for="organizationDescription">Organization Description</label>
+                <textarea name="organizationDescription" id="organizationDescription" rows="4" cols="50" required></textarea>                
                 <input type="hidden" id="form-loaded-time" name="form-loaded-time">
                 <label><input type="submit" value="Join"></label>
             </fieldset>
