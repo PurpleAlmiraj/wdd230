@@ -1,0 +1,44 @@
+header, footer {
+    font-size: clamp(25px, 2vw, 40px);
+    border: black solid 5px;
+    margin: 10px;
+    height: 250px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: rgb(129, 171, 218);
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-size: clamp(16px, 2vw, 25px);
+}
+
+main {
+    text-align: center;
+    display: flex; /* Add display flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+section {
+    background-color: rgb(146, 102, 197);
+    padding: 15px 50px 25px 50px;
+    border: black solid 5px;
+    margin: 25px;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: clamp(21px, 1.5vw, 26px);
+}
+
+p {
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+img {
+    border: black solid 3px;
+}

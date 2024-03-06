@@ -1,0 +1,29 @@
+{
+    "familyname": "Smith",
+    "moved_in_date": "2023-05-15",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "John Smith",
+        "gender": "Male",
+        "birthdate": "1990-03-12"
+      },
+      {
+        "name": "Mary Smith",
+        "gender": "Female",
+        "birthdate": "1992-08-25"
+      },
+      {
+        "name": "Emily Smith",
+        "gender": "Female",
+        "birthdate": "2015-11-03"
+      },
+      {
+        "name": "Jacob Smith",
+        "gender": "Male",
+        "birthdate": "2018-07-19"
+      }
+    ]
+  }
+  

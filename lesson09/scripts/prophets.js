@@ -1,0 +1,40 @@
+const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const cards = document.querySelector('#cards');
+
+async function getProphetData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayProphets(data.prophets);
+}
+  
+const displayProphets = (prophets) => {
+    prophets.forEach((prophet) => {
+      
+      let card = document.createElement('section');
+      let fullName = document.createElement('h2'); 
+      let portrait = document.createElement('img');
+      let dateOfBirth = document.createElement('p'); // Create element for date of birth
+      let birthPlace = document.createElement('p')
+
+
+      fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+      dateOfBirth.textContent = `Date of Birth: ${prophet.birthdate}`; // Set text content for date of birth
+      birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
+
+     
+      portrait.setAttribute('src', prophet.imageurl); // Fixed case of imageURL
+      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // Used firstName and lastName
+      portrait.setAttribute('loading', 'lazy');
+      portrait.setAttribute('width', '340');
+      portrait.setAttribute('height', '440');
+  
+      card.appendChild(fullName); 
+      card.appendChild(dateOfBirth); // Append date of birth to the card
+      card.appendChild(birthPlace);
+      card.appendChild(portrait);
+
+      cards.appendChild(card);
+    }); 
+}
+
+getProphetData();
