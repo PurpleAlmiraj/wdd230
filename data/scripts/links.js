@@ -1,4 +1,4 @@
-const baseURL = "purplealmiraj.github.io/wdd230/";
+const baseURL = "https://purplealmiraj.github.io/wdd230/";
 const linksURL = "https://purplealmiraj.github.io/wdd230/data/links.json";
 
 async function getLinks() {
