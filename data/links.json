@@ -1,0 +1,121 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "lesson01/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "",
+          "title": "JS Pen"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "lesson02/design.html",
+          "title": "Design"
+        },
+        {
+          "url": "lesson02/design-principles.html",
+          "title": "Design Principles"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "lesson3/css_combinators.html",
+          "title": "CSS Combinators"
+        },
+        {
+          "url": "https://codepen.io/Ryan-Jones-the-sasster/pen/MWxEJLO",
+          "title": "CodePen Activity 1"
+        },
+        {
+          "url": "https://codepen.io/Ryan-Jones-the-sasster/pen/QWoqpOQ",
+          "title": "CodePen Activity 2"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "https://codepen.io/Ryan-Jones-the-sasster/pen/QWomWPX",
+          "title": "Codepen 3"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "BOM"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson06/images/landscape.webp",
+          "title": "LandScape Image"
+        },
+        {
+          "url": "lesson06/responsive-images.html",
+          "title": "Responsive Images"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "lesson07/lazyload.html",
+          "title": "Lazyload"
+        },
+        {
+          "url": "lesson07/bom.html",
+          "title": "BOM redone"
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "lesson08/tablebuild.html",
+          "title": "TableBuild"
+        },
+        {
+          "url": "lesson08/form.html",
+          "title": "Test Form"
+        },
+        {
+          "url": "form.html",
+          "title": "Form assignment"
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "Prophets"
+        }
+      ]
+    }
+  ]
+}
