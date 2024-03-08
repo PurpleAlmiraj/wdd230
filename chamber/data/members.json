@@ -5,7 +5,7 @@
         "address": "123 Main Street, Cityville, State, ZIP",
         "phone": "+1 (555) 123-4567",
         "website": "https://www.abccorp.com",
-        "image": "abc_corp_logo.png",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg",
         "membership_level": "Gold",
         "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
       },
@@ -14,7 +14,7 @@
         "address": "456 Elm Street, Townsville, State, ZIP",
         "phone": "+1 (555) 987-6543",
         "website": "https://www.xyzindustries.com",
-        "image": "xyz_logo.jpg",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.signalhire.com%2Fcompanies%2Fxyz&psig=AOvVaw151il3XgXUoKxzAK2frI5R&ust=1710011933180000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLiUnoCx5YQDFQAAAAAdAAAAABAE",
         "membership_level": "Silver",
         "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
       },

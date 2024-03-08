@@ -1,69 +1,63 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const memberContainer = document.getElementById('member-container');
+const linksURL = "https://purplealmiraj.github.io/wdd230/chamber/data/members.json";
+const memberContainer = document.querySelector('#member-container');
+const toggleButton = document.querySelector('#toggleView');
+let gridView = true; // Initially set to grid view
 
-    // Function to generate member cards
-    function generateMemberCards(companies) {
-        memberContainer.innerHTML = '';
-        companies.forEach(company => {
-            const card = document.createElement('div');
-            card.classList.add('member-card');
-            card.innerHTML = `
-                <h2>${company.name}</h2>
-                <p>Address: ${company.address}</p>
-                <p>Phone: ${company.phone}</p>
-                <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
-                <p>Membership Level: ${company.membership_level}</p>
-                <img src="images/${company.image}" alt="${company.name} Logo">
-            `;
-            memberContainer.appendChild(card);
-        });
+async function getMemberData() {
+    try {
+        const response = await fetch(linksURL);
+        const data = await response.json();
+        displayMembers(data.companies);
+    } catch (error) {
+        console.error('Error fetching member data:', error);
     }
+}
 
-    // Function to generate member list
-    function generateMemberList(companies) {
-        memberContainer.innerHTML = '';
-        const list = document.createElement('ul');
-        list.classList.add('member-list');
-        companies.forEach(company => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `
-                <h3>${company.name}</h3>
-                <p>Address: ${company.address}</p>
-                <p>Phone: ${company.phone}</p>
-                <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
-                <p>Membership Level: ${company.membership_level}</p>
-            `;
-            list.appendChild(listItem);
-        });
-        memberContainer.appendChild(list);
+const displayMembers = (members) => {
+    memberContainer.innerHTML = ''; // Clear previous content
+    members.forEach((member) => {
+        let card = createMemberCard(member);
+        memberContainer.appendChild(card);
+    }); 
+}
+
+function createMemberCard(member) {
+    let card = document.createElement('div');
+    card.classList.add('member-card');
+
+    let name = document.createElement('h2');
+    name.textContent = member.name;
+
+    let address = document.createElement('p');
+    address.textContent = `Address: ${member.address}`;
+
+    let phone = document.createElement('p');
+    phone.textContent = `Phone: ${member.phone}`;
+
+    let website = document.createElement('a');
+    website.href = member.website;
+    website.textContent = 'Website';
+
+    let image = document.createElement('img');
+    image.src = member.image;
+    image.alt = member.name;
+
+    card.appendChild(name);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
+    card.appendChild(image);
+
+    return card;
+}
+
+toggleButton.addEventListener('click', () => {
+    gridView = !gridView; // Toggle between grid and list view
+    if (gridView) {
+        memberContainer.classList.remove('list-view');
+    } else {
+        memberContainer.classList.add('list-view');
     }
-
-    // Fetch JSON data
-    fetch("https://purplealmiraj.github.io/wdd230/chamber/data/members.json")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch data');
-            }
-            return response.json();
-        })
-        .then(companies => {
-            generateMemberCards(companies);
-
-            // Toggle between grid and list view
-            const toggleButton = document.createElement('button');
-            toggleButton.textContent = 'Grid View';
-            toggleButton.addEventListener('click', () => {
-                if (toggleButton.textContent === 'Grid View') {
-                    generateMemberList(companies);
-                    toggleButton.textContent = 'List View';
-                } else {
-                    generateMemberCards(companies);
-                    toggleButton.textContent = 'Grid View';
-                }
-            });
-            document.body.insertBefore(toggleButton, memberContainer);
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-        });
 });
+
+getMemberData();

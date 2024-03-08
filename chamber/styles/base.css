@@ -353,3 +353,20 @@ form {
     border-bottom: 1px solid #ccc;
     padding: 10px;
 }
+
+.list-view .member-card {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 750px) {
+    .list-view .member-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .list-view .member-card {
+        width: 50%;
+    }
+}
