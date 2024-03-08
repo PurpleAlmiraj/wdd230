@@ -41,6 +41,7 @@ function createMemberCard(member) {
     let image = document.createElement('img');
     image.src = member.image;
     image.alt = member.name;
+    image.style.display = 'block'; // Make the image a block element
 
     card.appendChild(name);
     card.appendChild(address);
