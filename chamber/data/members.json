@@ -1,0 +1,68 @@
+{
+    "companies": [
+      {
+        "name": "ABC Corporation",
+        "address": "123 Main Street, Cityville, State, ZIP",
+        "phone": "+1 (555) 123-4567",
+        "website": "https://www.abccorp.com",
+        "image": "abc_corp_logo.png",
+        "membership_level": "Gold",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      },
+      {
+        "name": "XYZ Industries",
+        "address": "456 Elm Street, Townsville, State, ZIP",
+        "phone": "+1 (555) 987-6543",
+        "website": "https://www.xyzindustries.com",
+        "image": "xyz_logo.jpg",
+        "membership_level": "Silver",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      },
+      {
+        "name": "123 Enterprises",
+        "address": "789 Oak Avenue, Villagetown, State, ZIP",
+        "phone": "+1 (555) 456-7890",
+        "website": "https://www.123ent.com",
+        "image": "123_logo.png",
+        "membership_level": "Bronze",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      },
+      {
+        "name": "Smith & Co.",
+        "address": "101 Pine Street, Hamletville, State, ZIP",
+        "phone": "+1 (555) 987-6543",
+        "website": "https://www.smithandco.com",
+        "image": "smithco_logo.jpg",
+        "membership_level": "Gold",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      },
+      {
+        "name": "Tech Innovations Ltd.",
+        "address": "202 Maple Avenue, Technocity, State, ZIP",
+        "phone": "+1 (555) 543-2109",
+        "website": "https://www.techinnovations.com",
+        "image": "techinn_logo.png",
+        "membership_level": "Platinum",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      },
+      {
+        "name": "Global Solutions Inc.",
+        "address": "303 Cedar Street, Globaltown, State, ZIP",
+        "phone": "+1 (555) 321-0987",
+        "website": "https://www.globalsolutions.com",
+        "image": "global_logo.jpg",
+        "membership_level": "Silver",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      },
+      {
+        "name": "Bright Future Enterprises",
+        "address": "404 Walnut Avenue, Futuricity, State, ZIP",
+        "phone": "+1 (555) 890-1234",
+        "website": "https://www.brightfutureent.com",
+        "image": "brightfuture_logo.png",
+        "membership_level": "Bronze",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae justo eget nunc consequat varius."
+      }
+    ]
+  }
+  
