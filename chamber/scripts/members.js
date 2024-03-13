@@ -1,7 +1,9 @@
 const linksURL = "https://purplealmiraj.github.io/wdd230/chamber/data/members.json";
 const memberContainer = document.querySelector('#member-container');
 const toggleButton = document.querySelector('#toggleView');
-let gridView = true; // Initially set to grid view
+
+// Initially apply the list-view class to hide the images
+memberContainer.classList.add('list-view');
 
 async function getMemberData() {
     try {
@@ -53,12 +55,7 @@ function createMemberCard(member) {
 }
 
 toggleButton.addEventListener('click', () => {
-    gridView = !gridView; // Toggle between grid and list view
-    if (gridView) {
-        memberContainer.classList.remove('list-view');
-    } else {
-        memberContainer.classList.add('list-view');
-    }
+    memberContainer.classList.toggle('list-view');
 });
 
 getMemberData();
