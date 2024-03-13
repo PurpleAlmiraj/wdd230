@@ -98,13 +98,30 @@ h3 {
     margin-top: 5px;
 }
 
+
 .card2 p {
     font-size: 30px;
     text-align: center;
     align-items: center;
     color: black;
 
+
 }
+ .card2 p span {
+    color: black;
+    margin: 5px;
+ }
+
+#weather-icon {
+    width: 100px;
+    height: auto;
+    border: black solid 4px;
+    padding-top: 15px;
+    padding-bottom: -15px;
+    background: rgb(170, 170, 170);
+
+}
+
 
 .numvisits {
     color: black;
