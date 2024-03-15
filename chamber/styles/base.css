@@ -415,3 +415,9 @@ form {
 .list-view image {
     display: none;
 }
+.content2 p img{
+    width: clamp(35px, 3vw, 50px);
+    border: black solid 1px;
+    margin-bottom: -10px;
+}
+
