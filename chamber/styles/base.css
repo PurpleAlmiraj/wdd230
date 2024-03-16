@@ -423,7 +423,6 @@ form {
 
 #meetAndGreetBanner {
     display: flex;
-    flex-direction: vertical;
     text-align: center;
     background-color: rgb(100, 100, 185);
     color: white;
