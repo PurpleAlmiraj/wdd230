@@ -1,48 +1,95 @@
-const forecastContainer = document.getElementById('forecast-container');
-
-async function fetchForecast() {
+async function fetchForecast(city) {
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+    
     try {
-        const response = await fetch(apiUrl.replace('weather', 'forecast'));
-        if (response.ok) {
-            const data = await response.json();
-            displayForecast(data); 
-        } else {
-            throw Error(await response.text());
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
+        const data = await response.json();
+        console.log(data); 
+        return data;
     } catch (error) {
-        console.log(error);
+        displayErrorMessage('Error fetching data:', error.message);
+        return null; 
     }
 }
 
-function displayForecast(data) {
-    const forecastList = data.list;
-    // Clear previous forecast data
-    forecastContainer.innerHTML = '';
+function displayForecast(forecastData) {
+    const forecastContainer = document.getElementById('forecast-container');
+    if (!forecastContainer) {
+        displayErrorMessage('Forecast container not found');
+        return;
+    }
+    forecastContainer.innerHTML = ''; // Clear previous content
 
-    // Iterate over the forecast data for the next three days
-    for (let i = 0; i < 3; i++) {
-        const forecast = forecastList[i * 8]; // Data for every 8th element represents a forecast for the next day
+    if (!forecastData || !forecastData.list || forecastData.list.length < 4) {
+        displayErrorMessage('Invalid forecast data');
+        return;
+    }
 
-        const forecastDate = new Date(forecast.dt * 1000); // Convert Unix timestamp to milliseconds
-        const day = forecastDate.toLocaleDateString('en-US', { weekday: 'short' });
-        const date = forecastDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const dailyForecasts = {}; // Object to store daily forecasts
 
-        const forecastTemp = forecast.main.temp.toFixed(1);
-        const forecastIcon = forecast.weather[0].icon;
-        const forecastDescription = forecast.weather[0].description;
+    // Group forecast data by day
+    forecastData.list.forEach((item) => {
+        // Extract the date without time (using UTC date to handle time zone differences)
+        const date = new Date(item.dt * 1000);
+        const dateString = date.toISOString().split('T')[0];
 
-        // Create HTML elements to display forecast data
-        const forecastElement = document.createElement('div');
-        forecastElement.classList.add('forecast-item');
-        forecastElement.innerHTML = `
-            <p>${day}, ${date}</p>
-            <img src="https://openweathermap.org/img/wn/${forecastIcon}.png" alt="Weather Icon">
-            <p>${forecastTemp}&deg;F</p>
-            <p>${forecastDescription}</p>
+        // Initialize daily forecast array if not already exists
+        if (!dailyForecasts[dateString]) {
+            dailyForecasts[dateString] = [];
+        }
+
+        // Add forecast item to corresponding day
+        dailyForecasts[dateString].push(item);
+    });
+
+    // Extract and display daily forecast for the next 3 days
+    Object.keys(dailyForecasts).slice(1, 4).forEach((dateString) => {
+        const dailyForecast = dailyForecasts[dateString][0]; // Take the first forecast item of the day
+        const date = new Date(dailyForecast.dt * 1000);
+        const minTemp = dailyForecast.main.temp_min;
+        const maxTemp = dailyForecast.main.temp_max;
+        const description = dailyForecast.weather[0].description.charAt(0).toUpperCase() + dailyForecast.weather[0].description.slice(1);
+        const iconCode = dailyForecast.weather[0].icon;
+
+        const forecastItem = document.createElement('div');
+        forecastItem.classList.add('forecast-item');
+        forecastItem.innerHTML = `
+            <img src="https://openweathermap.org/img/wn/${iconCode}.png" alt="Weather Icon">
+            <p>Date: ${date.toDateString()}</p>
+            <p>Temperature: ${minTemp}°C - ${maxTemp}°C</p>
+            <p>Description: ${description}</p>
+            
         `;
-        // Append forecast element to the forecast container
-        forecastContainer.appendChild(forecastElement);
+        forecastContainer.appendChild(forecastItem);
+    });
+}
+
+
+function displayErrorMessage(...messages) {
+    const forecastContainer = document.getElementById('forecast-container');
+    if (forecastContainer) {
+        const errorDiv = document.createElement('div');
+        errorDiv.classList.add('error-message');
+        errorDiv.textContent = messages.join(' ');
+        forecastContainer.innerHTML = ''; 
+        forecastContainer.appendChild(errorDiv);
     }
 }
 
-fetchForecast();
+
+
+async function getAndDisplayForecast() {
+    const city = 'Rexburg,US'; 
+    const forecastData = await fetchForecast(city);
+    console.log(forecastData); 
+    if (forecastData) {
+        displayForecast(forecastData);
+    } else {
+        displayErrorMessage('Failed to fetch forecast data');
+    }
+}
+
+getAndDisplayForecast();

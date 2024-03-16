@@ -415,9 +415,48 @@ form {
 .list-view image {
     display: none;
 }
-.content2 p img{
+.content2 img{
     width: clamp(35px, 3vw, 50px);
-    border: black solid 1px;
+    border: black solid 2px;
     margin-bottom: -10px;
 }
 
+#meetAndGreetBanner {
+    display: flex;
+    flex-direction: vertical;
+    text-align: center;
+    background-color: rgb(100, 100, 185);
+    color: white;
+    border: black solid 5px;
+    margin: 5px;
+    justify-content: center;
+    font-size: clamp(25px, 4vw, 40px);
+
+}
+
+#closeBannerButton {
+    background-color: rgb(100, 100, 185);
+    border: none;
+    font-size: clamp(25px, 4vw, 40px);
+}
+
+#closeBannerButton:hover {
+    background-color: rgb(91, 91, 173);
+}
+
+.forecast-item{
+    color: black;
+    border: black solid 3px;
+    margin: 10px;
+}
+
+.forecast-item img {
+    width: clamp(35px, 3vw, 50px);
+    border: black solid 2px;
+}
+#allweather {
+    border: black solid 3px;
+    margin: 10px;
+    color: black;
+    margin-bottom: -15px;
+}

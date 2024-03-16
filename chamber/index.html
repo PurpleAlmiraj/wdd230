@@ -21,6 +21,10 @@
     
 </head>
 <body>
+    <div id="meetAndGreetBanner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        <button id="closeBannerButton">&times;</button> <!-- Close button for the banner -->
+    </div>
     <a id = "dark" href="#"></a>
     <header>
         Rexburg
@@ -52,10 +56,13 @@
                 Call to action
             </section>
             <section class = "content2">
-                WeatherCard
-                <p id="weatherSection"><span id="weather-icon"></span> <span id = "current-temp"></span> - <span id="figcaption"></span></p>
-                <p>Wind Speed: <span id="windSpeedMilesPerHour"></span> MPH</p>
-                <p>Wind Chill: <span id="windChill"></span> F</p>
+                <h2>WeatherCard</h2> 
+                <div id="allweather">
+                    <span id="weather-icon"></span>
+                    <p id="weatherSection"> Today: <span id = "current-temp"></span> - <span id="figcaption"></span></p>
+                    <p>Wind Speed: <span id="windSpeedMilesPerHour"></span> MPH</p>
+                    <p>Wind Chill: <span id="windChill"></span> F</p>
+                </div>
                 <div id="forecast-container"></div>
             </section>
             <section class = "content3">
@@ -92,5 +99,7 @@
     <script src="scripts/Hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
