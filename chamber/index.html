@@ -18,7 +18,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://purplealmiraj.github.io/wdd230/chamber/index.html" >
     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.worldatlas.com%2Fcities%2Frexburg-idaho.html&psig=AOvVaw0e3iEFc4yDNWZoEtVchU12&ust=1706993272603000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLj1sdLDjYQDFQAAAAAdAAAAABAE" />
-    
 </head>
 <body>
     <div id="meetAndGreetBanner" class="banner">
@@ -38,48 +37,64 @@
         <a href="join.html">Join</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
-        <a href="">Nav5</a>
     </nav>
     <main>
         <div class = "hero">
             <div class = "herodiv">
                 <picture>
-                    <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/wdd230-medium.webp" media="(max-width: 100px)">
-                    <img src="images/wdd230-large.webp" alt="Hero Image">
+                    <source srcset="images/rexburg.webp" media="(max-width: 500px)">
+                    <source srcset="images/rexburg.webp" media="(max-width: 1000px)">
+                    <img src="images/rexburg.webp" alt="Hero Image">
                 </picture>
             </div>
             
         </div>
         <section class = "grid">
             <section class = "content1">
-                Call to action
+                <h2>Call to action</h2>
+                <p>Nestled amidst the picturesque landscapes of eastern Idaho lies Rexburg, a charming city brimming 
+                    with endless opportunities for adventure, discovery, and community engagement. With its rich heritage,
+                     vibrant culture, and diverse array of attractions, Rexburg beckons visitors and residents alike to immerse 
+                     themselves in its captivating allure. From the iconic spires of the Rexburg Idaho Temple to the serene banks of the Snake River, every corner of this enchanting 
+                    city exudes a sense of warmth and hospitality that is truly unparalleled.</p>
+                <p>As the beating heart of Madison County, Rexburg pulsates with energy and vitality, offering a myriad of activities and experiences to suit every interest and inclination. 
+                    Whether you're an outdoor enthusiast seeking adrenaline-pumping thrills or a history buff eager to unravel the tales of yesteryears, Rexburg has something for everyone. Embark on a 
+                    scenic hike through the lush trails of Yellowstone Bear World, where you can marvel at the majestic beauty of nature and catch a glimpse of the region's iconic wildlife in their 
+                    natural habitat.</p>
+                <p>For those with a penchant for history and culture, a visit to the Museum of Rexburg is a must. Delve into the city's fascinating past as you peruse through captivating exhibits and a
+                    rtifacts that chronicle the evolution of Rexburg from its humble beginnings to the thriving metropolis it is today. From the pioneers who first settled the land to the vibrant tapestry 
+                    of cultures that now call Rexburg home, each display offers a captivating glimpse into the city's storied heritage.</p>
+                <p>However, Rexburg is not just a destination for sightseers and history buffs; it is also a vibrant hub of commerce, education, and innovation. With its thriving business community and world-class 
+                    educational institutions such as Brigham Young University-Idaho, Rexburg offers ample opportunities for professional growth and development. Whether you're a budding entrepreneur looking to launch your 
+                    startup or a seasoned professional seeking new horizons, Rexburg's dynamic economy and entrepreneurial spirit make it the perfect place to turn your dreams into reality.</p>
+                    <p>But perhaps what truly sets Rexburg apart is its strong sense of community and commitment to service. In Rexburg, neighbors aren't just neighbors they're family. From volunteering at local charities 
+                        to participating in community events and fundraisers, Rexburg residents are passionate about giving back and making a positive impact in the lives of others. Whether it's lending a helping hand to a n
+                        eighbor in need or rallying together in times of crisis, the spirit of unity and compassion that permeates Rexburg is truly inspiring.
+                    </p>
+                    <p>In conclusion, Rexburg is more than just a destination – it's a way of life. With its breathtaking natural beauty, rich cultural heritage, and strong sense of community, Rexburg offers a unique and unforgettable 
+                        experience for all who visit. So, whether you're planning your next family vacation, embarking on a solo adventure, or looking to put down roots in a place you can truly call home, we invite you to answer the call 
+                        to action and discover all that Rexburg, Idaho has to offer.</p>
             </section>
             <section class = "content2">
                 <h2>WeatherCard</h2> 
-                <div id="allweather">
-                    <span id="weather-icon"></span>
-                    <p id="weatherSection"> Today: <span id = "current-temp"></span> - <span id="figcaption"></span></p>
-                    <p>Wind Speed: <span id="windSpeedMilesPerHour"></span> MPH</p>
-                    <p>Wind Chill: <span id="windChill"></span> F</p>
-                </div>
-                <div id="forecast-container"></div>
-            </section>
-            <section class = "content3">
-                <h2>Member spotlights</h2>
-                <div class = "membership">
-                    <div>
-                        div1
-                    </div>
-                    <div> 
-                        div2
-                    </div>
-                    <div>
-                        div3
+
+                <div id="forecast-container">
+                    <div id="allweather">
+                        <span id="weather-icon"></span>
+                        <p id="weatherSection"> Today: <span id = "current-temp"></span> - <span id="figcaption"></span></p>
+                        <p>Wind Speed: <span id="windSpeedMilesPerHour"></span> MPH</p>
+                        <p>Wind Chill: <span id="windChill"></span> F</p>
                     </div>
                 </div>
             </section>
+
+        <section class="content3">
+            <h2>Member spotlights</h2>
+            <div id="memberSpotlights"></div>
+                
+            </div>
         </section>
+
     </main>
     <footer>
         <p>
@@ -101,5 +116,6 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/memberss.js"></script>
 </body>
 </html>

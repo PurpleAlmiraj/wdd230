@@ -21,33 +21,33 @@ function displayForecast(forecastData) {
         displayErrorMessage('Forecast container not found');
         return;
     }
-    forecastContainer.innerHTML = ''; // Clear previous content
+    forecastContainer.innerHTML = ''; 
 
     if (!forecastData || !forecastData.list || forecastData.list.length < 4) {
         displayErrorMessage('Invalid forecast data');
         return;
     }
 
-    const dailyForecasts = {}; // Object to store daily forecasts
+    const dailyForecasts = {}; 
 
-    // Group forecast data by day
+   
     forecastData.list.forEach((item) => {
-        // Extract the date without time (using UTC date to handle time zone differences)
+        
         const date = new Date(item.dt * 1000);
         const dateString = date.toISOString().split('T')[0];
 
-        // Initialize daily forecast array if not already exists
+        
         if (!dailyForecasts[dateString]) {
             dailyForecasts[dateString] = [];
         }
 
-        // Add forecast item to corresponding day
+        
         dailyForecasts[dateString].push(item);
     });
 
-    // Extract and display daily forecast for the next 3 days
-    Object.keys(dailyForecasts).slice(1, 4).forEach((dateString) => {
-        const dailyForecast = dailyForecasts[dateString][0]; // Take the first forecast item of the day
+    
+    Object.keys(dailyForecasts).slice(1, 5).forEach((dateString) => {
+        const dailyForecast = dailyForecasts[dateString][0]; 
         const date = new Date(dailyForecast.dt * 1000);
         const minTemp = dailyForecast.main.temp_min;
         const maxTemp = dailyForecast.main.temp_max;

@@ -6,6 +6,10 @@ body {
     transition: background-color 1s ease, color 1s ease; 
 }
 
+main {
+    height: 50%;
+}
+
 #dark {
     position: fixed;
     top: 2rem;
@@ -93,10 +97,10 @@ img {
     height: auto; 
 }
 .discover {
-
+    color: black;
 }
-.sidebar {
-    border: black solid 2px;
+.sidebar div p{
+    color: black;
 }
 
 .sidebar div {
@@ -123,6 +127,43 @@ section {
 }
 
 
+.hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center; /* Center the image horizontally */
+}
+
+.herodiv {
+    position: relative;
+    display: inline-block; /* Ensure that the div wraps around its content */
+}
+
+.hero img {
+    width: 75%; /* Set width to 75% */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Adjust image size for different screen sizes */
+@media screen and (min-width: 1001px) {
+    .hero img {
+        max-width: 1500px; /* Set maximum width to 1500px for screens wider than 1000px */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero img {
+        max-width: 1000px; /* Set maximum width to 1000px for screens up to 1000px wide */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero img {
+        max-width: 500px; /* Set maximum width to 500px for screens up to 500px wide */
+    }
+}
 
 
 .membership {
@@ -138,12 +179,22 @@ section {
 
 }
 
+.content1 p{
+    margin: 10px;
+}
 
 
 
 footer {
     font-size: clamp(1rem, 1.5vw, 2rem);
+    margin-top: 3rem; /* Adjust the margin-top to bring the footer up */
+    padding: 2rem; /* Add padding for better spacing */
+    text-align: center;
+    background-color: #FF5733;
+    border: black solid 8px;
+    clear: both; /* Clear any floats */
 }
+
 
 @media screen and (max-width: 750px)
 {
@@ -443,19 +494,76 @@ form {
     background-color: rgb(91, 91, 173);
 }
 
+.content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+#forecast-container {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+
+}
+
+.iframe {
+    border: none;
+}
+
+.calender {
+    border: none;
+}
+
 .forecast-item{
     color: black;
-    border: black solid 3px;
-    margin: 10px;
+    width: clamp(300px, 90%, 650px);
+    margin-left: -10px;
+    
 }
 
 .forecast-item img {
     width: clamp(35px, 3vw, 50px);
-    border: black solid 2px;
+    height: clamp(35px, 3vw, 50px);
 }
 #allweather {
-    border: black solid 3px;
-    margin: 10px;
     color: black;
-    margin-bottom: -15px;
+    width: clamp(300px, 90%, 650px);
+    
+}
+
+
+
+
+.content3 {
+    height: 60%;
+}
+
+#memberSpotlights {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    margin-left: 13%;
+    width: 74%; /* Adjusted width to accommodate centering */
+    margin: 0 auto; /* Center the container */
+}
+
+.company {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust the width of each company storage */
+    margin: 0 10px 20px; /* Add margin around each company storage */
+    max-width: 500px; /* Limit the maximum width of each company */
+}
+
+#companyStorage {
+    border: black solid 2px;
+    width: 100%; /* Set width to 100% to take up full width of the parent container */
+}
+
+#companyStorage img {
+    width: 100px;
+    border: none;
 }

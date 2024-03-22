@@ -4,9 +4,9 @@ const captionDesc = document.getElementById('figcaption');
 const windSpeedElement = document.getElementById('windSpeedMilesPerHour');
 const windChillElement = document.getElementById('windChill');
 
-const city = 'Rexburg'; // City name from the JSON data
-const country = 'USA'; // Country code from the JSON data
-const apiKey = '43b3cbdca90c95afdeca16685e715d94'; // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+const city = 'Rexburg'; 
+const country = 'USA'; 
+const apiKey = '43b3cbdca90c95afdeca16685e715d94'; 
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=imperial&appid=${apiKey}`;
 
 async function apiFetch() {
