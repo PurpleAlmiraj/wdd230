@@ -16,7 +16,7 @@ main {
     font-size: clamp(1rem,  1.5vw, 1.5rem);
     background-color: rgb(51, 51, 51);
     padding: .5rem;
-    border: white solid 2px;
+    border: rgb(209, 209, 209) solid 2px;
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ main {
 }
 
 #dark:hover {
-    background-color: blue;
+    background-color: rgb(223, 223, 223);
     border: black solid 2px;
 }
 
@@ -55,6 +55,16 @@ header {
     padding: 3rem;
     text-align: center;
     font-size: clamp(2.5rem,  2vw, 3.5rem);
+}
+
+.home-icon {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 100px;
+    transform: translateY(-50%);
+    width: clamp(100px, 20%, 155px); /* Adjusted clamp function */
+    height: auto;
+    border: none;
 }
 
 
@@ -100,10 +110,12 @@ img {
 }
 .sidebar div p{
     color: black;
+    width: clamp(100px 50% 1200px);
+    word-wrap: break-word;
 }
 
 .sidebar div {
-    margin: 10px;
+    margin: 30px;
     padding: 5rem;
     margin-top: -60px;
 
@@ -198,7 +210,7 @@ footer {
 }
 
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: 850px)
 {
 
     main {
@@ -427,7 +439,7 @@ form {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 850px) {
     .list-view .member-card {
         width: 100%;
     }
