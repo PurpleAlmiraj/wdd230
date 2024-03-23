@@ -35,15 +35,12 @@ main {
 }
 
 body.darkness {
-    background-color: #121212;
-    color: white;
+    background-color: #121212; 
+    color: #e0e0e0; 
 }
 
 
 
-a {
-    color: rgb(52, 109, 128);
-}
 
 header, footer {
     background-color: #FF5733;
@@ -105,9 +102,7 @@ img {
     width: 75%; 
     height: auto; 
 }
-.discover {
-    color: black;
-}
+
 .sidebar div p{
     color: black;
     word-wrap: break-word;
@@ -293,7 +288,7 @@ fieldset {
 }
 
 legend {
-    color: blue;
+    color: rgb(0, 217, 255);
     padding: 0 .5rem;
 
 }
@@ -598,19 +593,19 @@ body.darkness main  {
 }
 
 body.darkness .member-card {
-    background-color: rgb(87, 87, 87); 
+    background-color: rgb(31, 31, 31); 
     color: black; 
 }
 
+body.darkness .member-card a {
+    color: rgb(0, 217, 255);
+}
 
 .member-card a {
     color: blue;
     text-decoration: none;
 }
 
-body.darkness .member-card a {
-    color: rgb(0, 247, 255);
-}
 body.darkness main * {
     border-color: #CCCCCC !important; 
 }
