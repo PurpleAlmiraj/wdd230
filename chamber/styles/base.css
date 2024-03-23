@@ -288,7 +288,7 @@ fieldset {
 }
 
 legend {
-    color: rgb(0, 217, 255);
+    color: black;
     padding: 0 .5rem;
 
 }
@@ -588,18 +588,24 @@ body.darkness main div p,
 body.darkness main div div p,
 body.darkness main div p div,
 body.darkness main  {
-    color: #CCCCCC !important;
+    color: #CCCCCC;
 
 }
+body.darkness header, body.darkness footer {
+    color: white;
+}
+
 
 body.darkness .member-card {
     background-color: rgb(31, 31, 31); 
     color: black; 
 }
 
-body.darkness .member-card a {
+body.darkness .member-card a, body.darkness legend {
     color: rgb(0, 217, 255);
 }
+
+
 
 .member-card a {
     color: blue;
