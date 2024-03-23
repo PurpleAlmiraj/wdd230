@@ -588,3 +588,21 @@ body.darkness main /* add other selectors for elements you want to change */ {
     color: white !important;
 
 }
+
+body.darkness .member-card {
+    background-color: rgb(87, 87, 87); /* Bright pink color */
+    color: black; /* Ensure text is readable */
+}
+
+
+.member-card a {
+    color: blue;
+    text-decoration: none;
+}
+
+body.darkness .member-card a {
+    color: rgb(0, 247, 255);
+}
+body.darkness main * {
+    border-color: white !important; /* Change border color to white */
+}
