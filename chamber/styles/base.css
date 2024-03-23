@@ -42,6 +42,8 @@ body.darkness {
     transition: background-color 0.9s ease, border 1s ease;
 }
 
+
+
 a {
     color: rgb(52, 109, 128);
 }
@@ -577,3 +579,12 @@ iframe.calender {
     height: auto;
 }
 
+body.darkness main p,
+body.darkness main div,
+body.darkness main div p,
+body.darkness main div div p,
+body.darkness main div p div,
+body.darkness main /* add other selectors for elements you want to change */ {
+    color: white !important;
+
+}
