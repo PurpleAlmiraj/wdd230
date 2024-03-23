@@ -578,7 +578,7 @@ form {
 }
 
 .mainheader {
-    font-size: 50px;
+    font-size: clamp(35px, 2vw, 80px);
     text-decoration: underline;
 }
 
