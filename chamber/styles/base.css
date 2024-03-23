@@ -35,7 +35,7 @@ main {
 }
 
 body.darkness {
-    background-color: rgb(20, 20, 20);
+    background-color: #121212;
     color: white;
 }
 
@@ -59,10 +59,10 @@ header {
 
 .home-icon {
     position: absolute;
-    left: 20px; /* Adjust as needed */
+    left: 20px; 
     top: 100px;
     transform: translateY(-50%);
-    width: clamp(100px, 20%, 155px); /* Adjusted clamp function */
+    width: clamp(100px, 20%, 155px); 
     height: auto;
     border: none;
 }
@@ -123,14 +123,14 @@ img {
 
 .images {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to new line */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .images img {
     width: 300px;
     height: auto;
-    margin: 25px; /* Adjust margin as desired */
+    margin: 25px; 
 }
 
 section {
@@ -144,37 +144,37 @@ section {
     width: 100%;
     overflow: hidden;
     position: relative;
-    text-align: center; /* Center the image horizontally */
+    text-align: center; 
 }
 
 .herodiv {
     position: relative;
-    display: inline-block; /* Ensure that the div wraps around its content */
+    display: inline-block; 
 }
 
 .hero img {
-    width: 75%; /* Set width to 75% */
+    width: 75%; 
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
 }
 
-/* Adjust image size for different screen sizes */
+
 @media screen and (min-width: 1001px) {
     .hero img {
-        max-width: 1500px; /* Set maximum width to 1500px for screens wider than 1000px */
+        max-width: 1500px; 
     }
 }
 
 @media screen and (max-width: 1000px) {
     .hero img {
-        max-width: 1000px; /* Set maximum width to 1000px for screens up to 1000px wide */
+        max-width: 1000px; 
     }
 }
 
 @media screen and (max-width: 500px) {
     .hero img {
-        max-width: 500px; /* Set maximum width to 500px for screens up to 500px wide */
+        max-width: 500px; 
     }
 }
 
@@ -200,12 +200,16 @@ section {
 
 footer {
     font-size: clamp(1rem, 1.5vw, 2rem);
-    margin-top: 3rem; /* Adjust the margin-top to bring the footer up */
-    padding: 2rem; /* Add padding for better spacing */
+    margin-top: 3rem; 
+    padding: 2rem; 
     text-align: center;
     background-color: #FF5733;
     border: black solid 8px;
-    clear: both; /* Clear any floats */
+    clear: both; 
+}
+
+footer a {
+    color: #FFFFFF;
 }
 
 
@@ -386,8 +390,8 @@ form {
     font-size: 10rem;
     color: black;
     text-align: center;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    justify-content: center; 
     display: flex;
 }
 
@@ -554,22 +558,22 @@ form {
 
 #memberSpotlights {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    justify-content: center; 
+    flex-wrap: wrap; 
     margin-left: 13%;
-    width: 74%; /* Adjusted width to accommodate centering */
-    margin: 0 auto; /* Center the container */
+    width: 74%; 
+    margin: 0 auto; 
 }
 
 .company {
-    flex: 1 1 calc(33.33% - 20px); /* Adjust the width of each company storage */
-    margin: 0 10px 20px; /* Add margin around each company storage */
-    max-width: 500px; /* Limit the maximum width of each company */
+    flex: 1 1 calc(33.33% - 20px); 
+    margin: 0 10px 20px; 
+    max-width: 500px; 
 }
 
 #companyStorage {
     border: black solid 2px;
-    width: 100%; /* Set width to 100% to take up full width of the parent container */
+    width: 100%; 
 }
 
 #companyStorage img {
@@ -588,14 +592,14 @@ body.darkness main div,
 body.darkness main div p,
 body.darkness main div div p,
 body.darkness main div p div,
-body.darkness main /* add other selectors for elements you want to change */ {
-    color: white !important;
+body.darkness main  {
+    color: #CCCCCC !important;
 
 }
 
 body.darkness .member-card {
-    background-color: rgb(87, 87, 87); /* Bright pink color */
-    color: black; /* Ensure text is readable */
+    background-color: rgb(87, 87, 87); 
+    color: black; 
 }
 
 
@@ -608,5 +612,5 @@ body.darkness .member-card a {
     color: rgb(0, 247, 255);
 }
 body.darkness main * {
-    border-color: white !important; /* Change border color to white */
+    border-color: #CCCCCC !important; 
 }
