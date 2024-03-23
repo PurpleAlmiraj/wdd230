@@ -110,7 +110,6 @@ img {
 }
 .sidebar div p{
     color: black;
-    width: clamp(100px 50% 1200px);
     word-wrap: break-word;
 }
 
@@ -583,10 +582,6 @@ form {
     text-decoration: underline;
 }
 
-iframe.calender {
-    width: clamp(300px 40% 800px);
-    height: auto;
-}
 
 body.darkness main p,
 body.darkness main div,
