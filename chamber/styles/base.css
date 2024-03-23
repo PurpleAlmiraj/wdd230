@@ -104,22 +104,25 @@ img {
 }
 
 .sidebar div {
-    border: blue solid 2px;
     margin: 10px;
     padding: 5rem;
+    margin-top: -60px;
+
 }
+
 
 .images {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+    flex-wrap: wrap; /* Allow images to wrap to new line */
+    justify-content: center; /* Center items horizontally */
 }
+
 .images img {
     width: 300px;
     height: auto;
-    margin: 1rem;
+    margin: 25px; /* Adjust margin as desired */
 }
+
 section {
     margin: 10px;
     margin-left: 5px;
@@ -289,7 +292,6 @@ label {
 }
 div {
     padding-top: 1rem;
-    color: blue;
 }
 
 input[type="text"],
@@ -515,9 +517,6 @@ form {
     border: none;
 }
 
-.calender {
-    border: none;
-}
 
 .forecast-item{
     color: black;
@@ -567,3 +566,14 @@ form {
     width: 100px;
     border: none;
 }
+
+.mainheader {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+iframe.calender {
+    width: clamp(300px 40% 800px);
+    height: auto;
+}
+
