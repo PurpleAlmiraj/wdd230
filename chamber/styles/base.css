@@ -3,7 +3,6 @@ body {
     background-color: white;
     font-size: clamp(0.8rem,  1.5vw, 1.3rem);
     margin: 0;
-    transition: background-color 1s ease, color 1s ease; 
 }
 
 main {
@@ -19,7 +18,6 @@ main {
     padding: .5rem;
     border: white solid 2px;
     text-decoration: none;
-    transition: background-color 0.9s ease, border 1s ease;
 }
 
 #dark::before {
@@ -39,7 +37,6 @@ main {
 body.darkness {
     background-color: rgb(20, 20, 20);
     color: white;
-    transition: background-color 0.9s ease, border 1s ease;
 }
 
 
